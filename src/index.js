@@ -373,7 +373,7 @@ class Offline {
       }
     }
 
-    if (!(serviceRuntime.startsWith('nodejs') || serviceRuntime.startsWith('python') || serviceRuntime.startsWith('ruby'))) {
+    if (!(serviceRuntime.startsWith('nodejs') || serviceRuntime.startsWith('python') || serviceRuntime.startsWith('ruby') || serviceRuntime.startsWith('go'))) {
       this.printBlankLine();
       this.serverlessLog(`Warning: found unsupported runtime '${serviceRuntime}'`);
 
